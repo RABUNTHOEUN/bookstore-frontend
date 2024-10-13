@@ -63,14 +63,14 @@ export default {
     },
     methods: {
         async addBook() {
-            await axios.post('http://localhost:5000/api/books', {
-                title: this.title,
-                author: this.author,
-                price: this.price,
-                description: this.description,
-                image_url: this.image_url,
-            });
-            this.$router.push('/');
+            // await axios.post('http://localhost:5000/api/books', {
+            //     title: this.title,
+            //     author: this.author,
+            //     price: this.price,
+            //     description: this.description,
+            //     image_url: this.image_url,
+            // });
+            // this.$router.push('/');
         },
     },
 };

@@ -67,23 +67,23 @@ export default {
     },
     methods: {
         async fetchBook() {
-            const response = await axios.get(`http://localhost:5000/api/books/${this.id}`);
-            const book = response.data;
-            this.title = book.title;
-            this.author = book.author;
-            this.price = book.price;
-            this.description = book.description;
-            this.image_url = book.image_url;
+            // const response = await axios.get(`http://localhost:5000/api/books/${this.id}`);
+            // const book = response.data;
+            // this.title = book.title;
+            // this.author = book.author;
+            // this.price = book.price;
+            // this.description = book.description;
+            // this.image_url = book.image_url;
         },
         async updateBook() {
-            await axios.put(`http://localhost:5000/api/books/${this.id}`, {
-                title: this.title,
-                author: this.author,
-                price: this.price,
-                description: this.description,
-                image_url: this.image_url,
-            });
-            this.$router.push('/');
+            // await axios.put(`http://localhost:5000/api/books/${this.id}`, {
+            //     title: this.title,
+            //     author: this.author,
+            //     price: this.price,
+            //     description: this.description,
+            //     image_url: this.image_url,
+            // });
+            // this.$router.push('/');
         },
     },
 };

@@ -34,8 +34,8 @@ export default {
     },
     methods: {
         async fetchBook() {
-            const response = await axios.get(`http://localhost:5000/api/books/${this.$route.params.id}`);
-            this.book = response.data;
+            // const response = await axios.get(`http://localhost:5000/api/books/${this.$route.params.id}`);
+            // this.book = response.data;
         },
     },
 };

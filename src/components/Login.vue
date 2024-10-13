@@ -22,17 +22,17 @@ export default {
     },
     methods: {
         async login() {
-            try {
-                await axios.post('http://localhost:5000/api/users/login', {
-                    username: this.username,
-                    password: this.password,
-                });
+            // try {
+            //     await axios.post('http://localhost:5000/api/users/login', {
+            //         username: this.username,
+            //         password: this.password,
+            //     });
 
 
-                this.$router.push('/');
-            } catch (error) {
-                console.error('Login error:', error.response.data.message);
-            }
+            //     this.$router.push('/');
+            // } catch (error) {
+            //     console.error('Login error:', error.response.data.message);
+            // }
         },
     },
 };

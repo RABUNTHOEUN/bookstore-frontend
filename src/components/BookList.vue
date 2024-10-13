@@ -72,14 +72,14 @@ export default {
     },
     methods: {
         async fetchBooks() {
-            const response = await axios.get('http://localhost:5000/api/books');
-            this.books = response.data;
+            // const response = await axios.get('http://localhost:5000/api/books');
+            // this.books = response.data;
         },
         async deleteBook(bookId) {
-            if (confirm('Are you sure you want to delete this book?')) {
-                await axios.delete(`http://localhost:5000/api/books/${bookId}`);
-                this.fetchBooks(); // Refresh the book list
-            }
+            // if (confirm('Are you sure you want to delete this book?')) {
+            //     await axios.delete(`http://localhost:5000/api/books/${bookId}`);
+            //     this.fetchBooks(); // Refresh the book list
+            // }
         },
     },
 };

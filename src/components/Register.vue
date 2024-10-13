@@ -24,12 +24,12 @@ export default {
     },
     methods: {
         async register() {
-            await axios.post('http://localhost:5000/api/users/register', {
-                username: this.username,
-                password: this.password,
-                email: this.email,
-            });
-            this.$router.push('/login');
+            // await axios.post('http://localhost:5000/api/users/register', {
+            //     username: this.username,
+            //     password: this.password,
+            //     email: this.email,
+            // });
+            // this.$router.push('/login');
         },
     },
 };
